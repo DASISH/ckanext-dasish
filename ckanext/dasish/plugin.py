@@ -41,7 +41,7 @@ class DasishPlugin(plugins.SingletonPlugin):
         #if 'groups' in facets_dict:
             #facets_dict['groups'] = 'Communities'
         # New facets
-        facets_dict['Creator'] = 'Creator'
+        facets_dict['extras_Creator'] = 'Creator'
         facets_dict['extras_DataProvider'] = 'Data Provider'
         facets_dict['extras_Collection'] = 'Collection'
         facets_dict['extras_Discipline'] = 'Discipline'
