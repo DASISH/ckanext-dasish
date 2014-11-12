@@ -36,17 +36,19 @@ class DasishPlugin(plugins.SingletonPlugin):
         if 'res_format' in facets_dict:
             del facets_dict['res_format']
 	    if 'tags' in facets_dict:
-	        del facets_dict['tags']
+	       del facets_dict['tags']
         # Renamed facets
         #if 'groups' in facets_dict:
             #facets_dict['groups'] = 'Communities'
         # New facets
         facets_dict['extras_Creator'] = 'Creator'
-        facets_dict['extras_DataProvider'] = 'Data Provider'
-        facets_dict['extras_Collection'] = 'Collection'
-        facets_dict['extras_Discipline'] = 'Discipline'
         facets_dict['extras_Language'] = 'Language'
-        facets_dict['extras_Subject'] = 'Subject'
+        facets_dict['extras_CreationYear'] = 'Creation Year'
+        facets_dict['extras_PublicationYear'] = 'Publication Year'
+        facets_dict['extras_DataProvider'] = 'Data Provider' 
         facets_dict['extras_Country'] = 'Country'
-        facets_dict['extras_CreationDate'] = 'CreationDate'
+        facets_dict['extras_Collection'] = 'Collection' 
+        facets_dict['extras_Discipline'] = 'Discipline'
+        facets_dict['extras_Subject'] = 'Subject'
+        facets_dict['extras_OAI_Origin'] = 'OAI Origin'
         return facets_dict
